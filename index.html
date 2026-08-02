@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SolarTiers — PvP Rankings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo"><div class="sun-icon"></div>SolarTiers</div>
+  <div class="header-actions">
+    <nav id="headerNav">
+      <a href="#" data-gm="" class="active">Overall</a>
+      <a href="#" data-gm="vanilla">Vanilla</a>
+      <a href="#" data-gm="sword">Sword</a>
+      <a href="#" data-gm="axe">Axe</a>
+      <a href="#" data-gm="uhc">UHC</a>
+      <a href="#" data-gm="pot">Pot</a>
+      <a href="https://discord.gg/QsAMfeSEh" target="_blank" rel="noopener">Discord</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="eyebrow" id="heroEyebrow">Overall · PvP Rankings</div>
+  <h1 id="heroTitle">Where the best burn brightest.</h1>
+  <p class="sub" id="heroSub">Live tier rankings across Vanilla, Sword, Axe, UHC, Pot, NethPot and SMP. Brighter badge, better tier.</p>
+  <p class="sub" style="margin-top:6px; font-family:var(--font-mono); font-size:12px; color:var(--gold);">No premium needed — cracked accounts welcome</p>
+
+  <div class="hero-actions">
+    <a class="discord-btn" href="https://discord.gg/QsAMfeSEh" target="_blank" rel="noopener">Join the Discord</a>
+  </div>
+
+  <div class="orbit-wrap">
+    <div class="podium" id="podium"></div>
+  </div>
+</section>
+
+<div class="gamemode-nav" id="gamemodeNav"></div>
+
+<div class="controls">
+  <input type="text" id="search" placeholder="Search a player...">
+  <select id="regionFilter">
+    <option value="ALL">All Regions</option>
+    <option value="NA">NA</option>
+    <option value="EU">EU</option>
+    <option value="AS">AS</option>
+    <option value="OCE">OCE</option>
+    <option value="SA">SA</option>
+  </select>
+  <select id="sortBy">
+    <option value="points-desc">Points: High to Low</option>
+    <option value="points-asc">Points: Low to High</option>
+    <option value="name-asc">Name: A to Z</option>
+  </select>
+  <div class="result-count" id="resultCount"></div>
+</div>
+
+<div class="table-wrap">
+  <table>
+    <thead id="tableHead"></thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+
+<footer>SolarTiers · fan-made rankings concept, not affiliated with mctiers.com · <a href="https://discord.gg/QsAMfeSEh" target="_blank" rel="noopener" style="color:var(--gold);">Join our Discord</a></footer>
+
+<!-- Player detail modal -->
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <button class="close" id="closeModal">&times;</button>
+    <div class="modal-head">
+      <div class="modal-orb" id="modalOrb"></div>
+      <div>
+        <h2 id="modalName"></h2>
+        <div class="sub" id="modalSub"></div>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><div class="v" id="modalPoints"></div><div class="l">Points</div></div>
+      <div class="stat"><div class="v" id="modalRankNum"></div><div class="l">Overall Rank</div></div>
+      <div class="stat"><div class="v" id="modalRegion"></div><div class="l">Region</div></div>
+    </div>
+    <div class="breakdown" id="modalBreakdown"></div>
+    <div class="modal-footer-actions">
+      <button class="btn" id="modalEditBtn">Edit</button>
+      <button class="btn danger" id="modalDeleteBtn">Delete</button>
+    </div>
+  </div>
+</div>
+
+<!-- Add / edit player modal -->
+<div class="overlay" id="formOverlay">
+  <div class="modal">
+    <button class="close" id="closeFormModal">&times;</button>
+    <div class="modal-head">
+      <div>
+        <h2 id="formTitle">Add a player</h2>
+        <div class="sub">Set a region and a tier per gamemode — points and overall rank are calculated for you.</div>
+      </div>
+    </div>
+    <div class="storage-note">This tier list is shared — anyone viewing it can add, edit, or remove players.</div>
+    <div class="form-error" id="formError"></div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="fName">Player name</label>
+        <input type="text" id="fName" placeholder="e.g. Kradusss" maxlength="30">
+      </div>
+      <div class="form-group">
+        <label for="fRegion">Region</label>
+        <select id="fRegion">
+          <option value="NA">NA</option>
+          <option value="EU">EU</option>
+          <option value="AS">AS</option>
+          <option value="OCE">OCE</option>
+          <option value="SA">SA</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="fSkin">Minecraft username (optional)</label>
+      <input type="text" id="fSkin" placeholder="Loads their live skin as the avatar">
+      <div class="hint">Leave blank to use the player's name as their Minecraft username.</div>
+    </div>
+    <div class="tier-grid" id="tierGrid"></div>
+    <div class="modal-footer-actions">
+      <button class="btn" id="cancelFormBtn">Cancel</button>
+      <button class="btn primary" id="saveFormBtn">Save player</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
