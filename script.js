@@ -44,6 +44,7 @@ const DEFAULT_PLAYERS = [
   {name:'ceckhla', region:'EU', skinUsername:'ceckhla', tiers:{vanilla:null, sword:null, axe:null, uhc:null, pot:null, nethpot:'HT5', smp:null, mace:null}},
   {name:'LukaMamaci', region:'EU', skinUsername:'LukaMamaci', tiers:{vanilla:null, sword:'LT5', axe:null, uhc:null, pot:'LT5', nethpot:null, smp:null, mace:null}},
   {name:'DangerMarIow', region:'EU', skinUsername:'DangerMarIow', tiers:{vanilla:null, sword:'HT4', axe:null, uhc:null, pot:null, nethpot:'LT4', smp:null, mace:null}},
+  {name:'tato_17', region:'EU', skinUsername:'tato_17', tiers:{vanilla:null, sword:'LT5', axe:null, uhc:null, pot:null, nethpot:null, smp:null, mace:null}},
 ];
 
 
