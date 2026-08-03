@@ -20,25 +20,28 @@ function tierNum(t){ return t ? parseInt(t.slice(2)) : null; }
 // Small monochrome icons (currentColor), one per gamemode — purely decorative
 // pictograms, not reproductions of any game asset.
 const MODE_ICONS = {
-  vanilla: '<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" stroke="none"><path d="M12 2.3l7.5 3v5.7c0 5.4-3.4 9-7.5 11.3-4.1-2.3-7.5-5.9-7.5-11.3V5.3l7.5-3z"/></svg>',
-  sword:   '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><line x1="19.5" y1="4.5" x2="8" y2="16"/><line x1="14.5" y1="9.5" x2="17.5" y2="12.5"/><line x1="6" y1="18" x2="8" y2="16"/><circle cx="5" cy="19" r="1.1" fill="currentColor" stroke="none"/></svg>',
-  axe:     '<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" stroke="none"><path d="M5.3 20.7L15 11l1.6 1.6-9.7 9.7z"/><path d="M13.3 9.6c1.2-3.4 4.4-6 8.2-6.4-.6 3.8-3 7-6.4 8.2z"/></svg>',
-  uhc:     '<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" stroke="none"><path d="M12 20.3s-7.3-4.5-7.3-9.8A4.4 4.4 0 0 1 12 7.3a4.4 4.4 0 0 1 7.3 3.2c0 5.3-7.3 9.8-7.3 9.8z"/></svg>',
-  pot:     '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.5h4"/><path d="M10.5 2.5v3.2L7.3 10v9.2a1.8 1.8 0 0 0 1.8 1.8h6a1.8 1.8 0 0 0 1.8-1.8V10l-3.4-4.3V2.5z" fill="currentColor" fill-opacity="0.22"/><path d="M7.6 13h8.8"/></svg>',
-  nethpot: '<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" stroke="none"><path d="M12 2.2l5.2 4-2.1 7.3-3.1 8.3-3.1-8.3-2.1-7.3z"/></svg>',
-  smp:     '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7-8 5-8-5z" fill="currentColor" fill-opacity="0.28" stroke="none"/><path d="M6 10v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-9"/><path d="M10 20v-5h4v5"/></svg>',
-  mace: '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="6" x2="12" y2="20"/><circle cx="12" cy="4" r="2" fill="currentColor"/><line x1="9" y1="2" x2="15" y2="6"/><line x1="9" y1="6" x2="15" y2="2"/></svg>',
+  vanilla: '<img src="images/vanilla.png" class="gm-icon" alt="Vanilla">',
+  sword: '<img src="images/sword.png" class="gm-icon" alt="Sword">',
+  axe: '<img src="images/axe.png" class="gm-icon" alt="Axe">',
+  uhc: '<img src="images/uhc.png" class="gm-icon" alt="UHC">',
+  pot: '<img src="images/pot.png" class="gm-icon" alt="Pot">',
+  nethpot: '<img src="images/nethpot.png" class="gm-icon" alt="NethPot">',
+  smp: '<img src="images/smp.png" class="gm-icon" alt="SMP">',
+  mace: '<img src="images/mace.png" class="gm-icon" alt="Mace">'
 };
 
 const DEFAULT_PLAYERS = [
   {name:'Kradusss', region:'EU', skinUsername:'Kradusss', tiers:{vanilla:null, sword:'LT3', axe:'LT3', uhc:null, pot:'LT3', nethpot:'HT4', smp:null, mace:null}},
   {name:'T_h_r_i_f_t_y', region:'EU', skinUsername:'T_h_r_i_f_t_y', tiers:{vanilla:null, sword:'LT4', axe:null, uhc:null, pot:null, nethpot:'LT4', smp:null, mace:'LT3'}},
-  {name:'hrucurd', region:'EU', skinUsername:'hrucurd', tiers:{vanilla:null, sword:'HT5', axe:null, uhc:null, pot:null, nethpot:null, smp:null, mace:'HT4'}},
+  {name:'hrucurd', region:'EU', skinUsername:'hrucurd', tiers:{vanilla:null, sword:'HT5', axe:'LT4', uhc:null, pot:null, nethpot:'HT5', smp:null, mace:'LT3'}},
   {name:'Luke2093', region:'EU', skinUsername:'Luke2093', tiers:{vanilla:null, sword:'HT5', axe:null, uhc:null, pot:null, nethpot:null, smp:null, mace:null}},
   {name:'zeranstorm1', region:'EU', skinUsername:'zeranstorm1', tiers:{vanilla:null, sword:null, axe:null, uhc:null, pot:null, nethpot:'LT4', smp:null, mace:null}},
   {name:'0d1xx', region:'EU', skinUsername:'0d1xx', tiers:{vanilla:null, sword:'LT5', axe:null, uhc:null, pot:null, nethpot:null, smp:null, mace:null}},
   {name:'ev11dence', region:'EU', skinUsername:'ev11dence', tiers:{vanilla:null, sword:null, axe:null, uhc:null, pot:null, nethpot:'HT4', smp:null, mace:null}},
   {name:'HOLYYY17', region:'EU', skinUsername:'HOLYYY17', tiers:{vanilla:null, sword:'LT5', axe:null, uhc:null, pot:null, nethpot:null, smp:null, mace:null}},
+  {name:'_XARBE', region:'EU', skinUsername:'_XARBE', tiers:{vanilla:null, sword:'LT3', axe:'HT4', uhc:null, pot:'HT4', nethpot:'LT4', smp:null, mace:null}},
+  {name:'Martosuli', region:'EU', skinUsername:'Martosuli', tiers:{vanilla:null, sword:'HT5', axe:null, uhc:null, pot:null, nethpot:null, smp:null, mace:null}},
+  {name:'ceckhla', region:'EU', skinUsername:'ceckhla', tiers:{vanilla:null, sword:null, axe:null, uhc:null, pot:null, nethpot:'HT5', smp:null, mace:null}},
 ];
 
 let PLAYERS = [];
@@ -50,11 +53,11 @@ function computePoints(tiers){
 }
 
 function rankTitle(points){
-  if (points >= 450) return 'Solar Sovereign';
-  if (points >= 350) return 'Solar Master';
-  if (points >= 250) return 'Solar Ace';
-  if (points >= 150) return 'Solar Specialist';
-  if (points >= 70) return 'Solar Apprentice';
+  if (points >= 180) return 'Solar Sovereign';
+  if (points >= 140) return 'Solar Master';
+  if (points >= 100) return 'Solar Ace';
+  if (points >= 60) return 'Solar Specialist';
+  if (points >= 20) return 'Solar Apprentice';
   return 'Solar Rookie';
 }
 
