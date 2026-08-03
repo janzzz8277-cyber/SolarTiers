@@ -33,7 +33,7 @@ const MODE_ICONS = {
 const DEFAULT_PLAYERS = [
   {name:'Kradusss', region:'EU', skinUsername:'Kradusss', tiers:{vanilla:null, sword:'LT3', axe:'LT3', uhc:null, pot:'LT3', nethpot:'HT4', smp:null, mace:null}},
   {name:'T_h_r_i_f_t_y', region:'EU', skinUsername:'T_h_r_i_f_t_y', tiers:{vanilla:null, sword:'LT4', axe:null, uhc:null, pot:null, nethpot:'LT4', smp:null, mace:'LT3'}},
-  {name:'hrucurd', region:'EU', skinUsername:'hrucurd', tiers:{vanilla:null, sword:'HT5', axe:'LT4', uhc:null, pot:null, nethpot:'HT5', smp:null, mace:'LT3'}},
+  {name:'hrucurd', region:'EU', skinUsername:'hrucurd', tiers:{vanilla:null, sword:'HT5', axe:'LT4', uhc:null, pot:'HT5', nethpot:'HT5', smp:null, mace:'LT3'}},
   {name:'Luke2093', region:'EU', skinUsername:'Luke2093', tiers:{vanilla:null, sword:'HT5', axe:null, uhc:null, pot:null, nethpot:null, smp:null, mace:null}},
   {name:'zeranstorm1', region:'EU', skinUsername:'zeranstorm1', tiers:{vanilla:null, sword:null, axe:null, uhc:null, pot:null, nethpot:'LT4', smp:null, mace:null}},
   {name:'0d1xx', region:'EU', skinUsername:'0d1xx', tiers:{vanilla:null, sword:'LT5', axe:null, uhc:null, pot:null, nethpot:null, smp:null, mace:null}},
