@@ -42,6 +42,7 @@ const DEFAULT_PLAYERS = [
   {name:'_XARBE', region:'EU', skinUsername:'_XARBE', tiers:{vanilla:null, sword:'LT3', axe:'HT4', uhc:null, pot:'HT4', nethpot:'LT4', smp:null, mace:null}},
   {name:'Martosuli', region:'EU', skinUsername:'Martosuli', tiers:{vanilla:null, sword:'HT5', axe:null, uhc:null, pot:null, nethpot:null, smp:null, mace:null}},
   {name:'ceckhla', region:'EU', skinUsername:'ceckhla', tiers:{vanilla:null, sword:null, axe:null, uhc:null, pot:null, nethpot:'HT5', smp:null, mace:null}},
+  {name:'LukaMamaci', region:'EU', skinUsername:'LukaMamaci', tiers:{vanilla:null, sword:'LT5', axe:null, uhc:null, pot:'LT5', nethpot:null, smp:null, mace:null}},
 ];
 
 let PLAYERS = [];
