@@ -51,7 +51,7 @@ const DEFAULT_PLAYERS = [
 
 
 let PLAYERS = [];
-let activeGamemode = null; // null = overall view
+let activeGamemode = null; 
 let editingId = null;
 
 function computePoints(tiers){
