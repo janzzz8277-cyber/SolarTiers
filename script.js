@@ -36,7 +36,7 @@ const DEFAULT_PLAYERS = [
   {name:'hrucurd', region:'EU', skinUsername:'hrucurd', tiers:{vanilla:null, sword:'HT5', axe:'LT4', uhc:null, pot:'HT5', nethpot:'HT5', smp:null, mace:'LT3'}},
   {name:'Luke2093', region:'EU', skinUsername:'Luke2093', tiers:{vanilla:null, sword:'HT5', axe:null, uhc:null, pot:null, nethpot:null, smp:null, mace:null}},
   {name:'zeranstorm1', region:'EU', skinUsername:'zeranstorm1', tiers:{vanilla:null, sword:null, axe:null, uhc:null, pot:null, nethpot:'LT4', smp:null, mace:null}},
-  {name:'0d1xx', region:'EU', skinUsername:'0d1xx', tiers:{vanilla:null, sword:'LT5', axe:null, uhc:null, pot:'LT5', nethpot:null, smp:'LT5', mace:'LT4'}},
+  {name:'0d1xx', region:'EU', skinUsername:'0d1xx', tiers:{vanilla:null, sword:'LT5', axe:'HT5', uhc:null, pot:'LT5', nethpot:null, smp:'LT5', mace:'LT4'}},
   {name:'ev11dence', region:'EU', skinUsername:'ev11dence', tiers:{vanilla:null, sword:null, axe:null, uhc:null, pot:null, nethpot:'HT4', smp:null, mace:null}},
   {name:'HOLYYY17', region:'EU', skinUsername:'HOLYYY17', tiers:{vanilla:null, sword:'LT5', axe:null, uhc:null, pot:null, nethpot:null, smp:null, mace:null}},
   {name:'_XARBE', region:'EU', skinUsername:'_XARBE', tiers:{vanilla:null, sword:'LT3', axe:'HT4', uhc:null, pot:'HT4', nethpot:'LT4', smp:null, mace:null}},
