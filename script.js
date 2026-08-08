@@ -92,7 +92,7 @@ async function loadPlayers(){
     const result = await window.storage.get(STORAGE_KEY, true);
     raw = result ? result.value : null;
   } catch (e) {
-    raw = null; // key not found yet
+    raw = null; 
   }
   if (raw){
     try {
