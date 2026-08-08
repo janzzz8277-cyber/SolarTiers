@@ -352,3 +352,11 @@ footer{
   .sun-icon{ animation:none; }
   .gm-tab, .discord-btn, .btn{ transition:none; }
 }
+
+.mode-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 2px;
+}
